@@ -1,4 +1,4 @@
-- hosts: ubuntu
+- hosts: localhost
   tasks:
     - name: "install haproxy"
       package:
@@ -12,7 +12,7 @@
       service:
         name: haproxy
         state: restarted
-- hosts: ubuntu
+- hosts: localhost
   tasks:
     - name: "Installing httpd on the target node"
       package:
