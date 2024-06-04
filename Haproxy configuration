@@ -1,0 +1,4 @@
+- name: " configure haproxy.cfg file"
+      template:
+        src: "/root/ansible_ws/ans_tas_12/haproxy.cfg.j2"
+        dest: "/etc/haproxy/haproxy.cfg"
